@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "home";
+}
+
+<h2>Home</h2>
+<div>Total Employees: @ViewBag.TotalEmployeeCount</div>
+
+<div>
+    @using (Html.BeginForm(null, null, FormMethod.Post))
+    {
+        <button type="submit">Add New Employee</button>
+    }
+</div>
+
